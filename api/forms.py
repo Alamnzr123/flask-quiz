@@ -5,7 +5,7 @@ from wtforms_sqlalchemy.fields import QuerySelectField
 import email_validator
 
 
-from app.models import User
+from api.models import User
 
 
 class LoginForm(FlaskForm):
