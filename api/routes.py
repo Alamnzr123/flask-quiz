@@ -1,8 +1,8 @@
 from app import app
 from flask import render_template, request, redirect, url_for, session, g, flash
 from urllib.parse import urlparse
-from app.forms import LoginForm, RegistrationForm, QuestionForm
-from app.models import User, Questions
+from api.forms import LoginForm, RegistrationForm, QuestionForm
+from api.models import User, Questions
 from app import db
 
 
