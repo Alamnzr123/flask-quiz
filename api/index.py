@@ -1,9 +1,9 @@
-from api import app
+from .root import app
 from flask import render_template, request, redirect, url_for, session, g, flash
 from urllib.parse import urlparse
 from api.forms import LoginForm, RegistrationForm, QuestionForm
 from api.models import User, Questions
-from api import db
+from api.root import db
 
 
 @app.before_request

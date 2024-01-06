@@ -11,7 +11,6 @@
 # migrate = Migrate(app, db)
 # from api import index
 
-from api import index
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -23,3 +22,4 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['QUES_PER_PAGE'] = 1
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+from api import index
